@@ -1,3 +1,17 @@
+## 💻 Tech Stack
+
+![Python](https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white)
+![FastAPI](https://img.shields.io/badge/FastAPI-009688?style=for-the-badge&logo=fastapi&logoColor=white)
+![Streamlit](https://img.shields.io/badge/Streamlit-FF4B4B?style=for-the-badge&logo=Streamlit&logoColor=white)
+![OpenAI](https://img.shields.io/badge/OpenAI-412991?style=for-the-badge&logo=openai&logoColor=white)
+
+*   **Core:** Python 3.10+
+*   **Web Search:** [Tavily API](https://tavily.com/)
+*   **Scraping:** [Trafilatura](https://trafilatura.readthedocs.io/)
+*   **Environment:** Python-Dotenv
+
+---
+
 # Deep Searcher
 
 **Deep Searcher** is an intelligent AI assistant that bridges the gap between static knowledge and real-time information. It dynamically decides whether to answer a user's query using its internal knowledge base or by performing a deep web search for the latest data.
@@ -59,19 +73,7 @@ To minimize latency during deep research, the system employs **asynchronous para
 
 ---
 
-## 💻 Tech Stack
 
-![Python](https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white)
-![FastAPI](https://img.shields.io/badge/FastAPI-009688?style=for-the-badge&logo=fastapi&logoColor=white)
-![Streamlit](https://img.shields.io/badge/Streamlit-FF4B4B?style=for-the-badge&logo=Streamlit&logoColor=white)
-![OpenAI](https://img.shields.io/badge/OpenAI-412991?style=for-the-badge&logo=openai&logoColor=white)
-
-*   **Core:** Python 3.10+
-*   **Web Search:** [Tavily API](https://tavily.com/)
-*   **Scraping:** [Trafilatura](https://trafilatura.readthedocs.io/)
-*   **Environment:** Python-Dotenv
-
----
 
 ## 🚀 Key Features
 
