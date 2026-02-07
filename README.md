@@ -1,4 +1,4 @@
-## 💻 Tech Stack
+# 💻 Tech Stack
 
 ![Python](https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white)
 ![FastAPI](https://img.shields.io/badge/FastAPI-009688?style=for-the-badge&logo=fastapi&logoColor=white)
@@ -18,7 +18,7 @@
 
 ---
 
-## 🏗️ Architecture
+##  Architecture
 
 The system follows a modern client-server architecture, orchestrating multiple AI services to deliver accurate results.
 
@@ -43,39 +43,31 @@ graph TD
 
 ---
 
-## 🌟 Special Features
+##  Special Features
 
-### 💰 Smart Cost Management (Hybrid Approach)
-Unlike systems that rely solely on expensive search API tokens for content retrieval, **Deep Searcher** uses a cost-effective hybrid strategy:
-*   **Tavily API** is used *only* for finding high-quality links and metadata.
-*   **Trafilatura** (an open-source scraper) is then used to extract the actual content from those links.
-*   **Result:** Significantly reduced API costs without compromising on the quality of sources.
+### 💰 Smart Cost Savings
+Most tools pay for every character they search. **Deep Searcher** uses a smart hybrid approach:
+* **Tavily API** finds the best high-quality links (low cost).
+* **Trafilatura** scrapes the actual content from those links (free).
+* **Result:** High-quality research at a fraction of the cost.
 
-### ⚡ Efficient Parallel Summarization
-To minimize latency during deep research, the system employs **asynchronous parallel processing**:
-*   Multiple web pages are scraped and processed simultaneously.
-*   The **LLM Summarizer** runs concurrently on each article.
-*   **Result:** Drastically faster response times, even when analyzing multiple lengthy documents.
+### ⚡ Async Speed (reducing latency)
+We don't wait for pages to load one by one. The system scrapes and summarizes all sources **in parallel**, cutting wait times significantly.
 
 ---
 
-## ⚙️ How It Works
+##  How It Works
 
-1.  **Input Analysis:** The user sends a message through the Streamlit UI.
-2.  **Smart Routing:** The **Router LLM** analyzes the intent.
-    *   *Simple/Creative queries* (e.g., "Write a poem") -> routed directly to the Generator.
-    *   *Fact-based/Recent queries* (e.g., "Latest stock prices") -> routed to the **Search Module**.
-3.  **Deep Research (If Search is triggered):**
-    *   **Search:** Queries the **Tavily API** to find high-quality, relevant sources.
-    *   **Scrape:** Uses **Trafilatura** to extract clean text from the identified webpages.
-    *   **Summarize:** Condenses the scraped content into key facts using a dedicated LLM step.
-4.  **Response Generation:** The final LLM combines the user's query with either the conversation history or the freshly gathered research context to generate a comprehensive answer.
+1.  **Router:** An AI checks if your question needs live web data (e.g., "Stock Price") or just internal knowledge (e.g., "Write a poem").
+2.  **Research (If Search is needed):**
+    * **Find:** Gets the top 3 relevant links via Tavily.
+    * **Scrape:** Extracts clean text using Trafilatura.
+    * **Summarize:** Condenses all sources simultaneously using async processing.
+3.  **Answer:** The LLM combines the fresh research with your chat history to give a clear, cited response.
 
 ---
 
-
-
-## 🚀 Key Features
+##  Key Features
 
 *   **🧠 Intelligent Routing:** Automatically detects when external data is needed.
 *   **🔎 Deep Web Research:** Goes beyond snippets by scraping and summarizing full articles.
@@ -84,7 +76,7 @@ To minimize latency during deep research, the system employs **asynchronous para
 
 ---
 
-## 📂 Project Structure
+##  Project Structure
 
 ```bash
 Lumofy/test/
@@ -101,7 +93,7 @@ Lumofy/test/
 
 ---
 
-## 🛠️ Setup & Installation
+##  Setup & Installation
 
 ### Prerequisites
 *   Python 3.10 or higher
