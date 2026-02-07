@@ -67,14 +67,6 @@ We don't wait for pages to load one by one. The system scrapes and summarizes al
 
 ---
 
-##  Key Features
-
-*   **🧠 Intelligent Routing:** Automatically detects when external data is needed.
-*   **🔎 Deep Web Research:** Goes beyond snippets by scraping and summarizing full articles.
-*   **💬 Context-Aware:** Maintains full conversational history for natural interactions.
-*   **✨ Unified Interface:** A clean, chat-based UI that transparently shows when the web is being accessed.
-
----
 
 ##  Project Structure
 
